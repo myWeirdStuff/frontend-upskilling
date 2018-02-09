@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>frontEnd upskilling - 105 Embedding styles in html + 106 Style priority</title>
+    <link rel="stylesheet" href="105.css"><!-- External - by using an external CSS file //-->
+    <style type="text/css" media="screen"> /* Internal - by using a style element in the head section */
+    /* overwriting 105.css */
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    #container {
+        border: solid 10px blue;
+        margin: 5px;
+        padding: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: red !important; /* inline color style will be ignored */
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    p.someParagraph {
+        font-style: italic;
+    }
+
+    #elementById {
+        color: red; /* will be green */
+    }
+
+    .elementByClass {
+        font-weight: bold;
+        font-style: normal; /* replaced settings from p*/
+    }
+    </style>
+</head>
+<body>
+<div id="container">
+    <section>
+        <div id="content">
+            <main>
+                <a href="" style="color: yellow">a href</a>
+                <p class="elementByClass">
+                    <mark>Lorem ipsum dolor</mark>
+                    sit amet, consectetur adipiscing elit. Aenean venenatis aliquam dolor ut auctor.
+                    Vivamus nec eros tempor, ullamcorper justo nec, scelerisque urna. Sed imperdiet risus ac tellus
+                    dictum consequat.
+                </p>
+                <p class="someParagraph">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                </p>
+                <div>
+                    <!-- Inline - by using the style attribute in HTML elements //-->
+                    <span id="elementById" style="color: green">some span</span>
+                </div>
+            </main>
+        </div>
+    </section>
+</div>
+</body>
+</html>

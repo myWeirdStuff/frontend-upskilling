@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>frontEnd upskilling - 104 Forms (input, button, form)</title>
+    <script>
+    </script>
+    <style type="text/css" media="screen">
+        body {
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            font-size: 1.4em;
+            color: red;
+        }
+
+        header {
+            font-family: 'Tangerine', serif;
+            font-size: 48px;
+        }
+
+        #container {
+            widows: 100;
+        }
+
+        #top-navigation {
+        }
+
+        #content {
+            font-size: 1.1rem;
+            color: gray;
+        }
+
+        #right-bar {
+        }
+
+        #footer-navigation {
+        }
+
+        .test-family-arial {
+            font-family: Arial, sans-serif;
+        }
+
+        .test-family-courier {
+            font-family: Courier, monospace;
+        }
+
+        .test-style {
+            color: blueviolet;
+            font-style: italic;
+            font-weight: 800;
+            font-variant: small-caps;
+            font-stretch: ultra-expanded;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <section>
+        <div id="content">
+            <main>
+                <div>
+                    <form>
+                        First name:<br>
+                        <input type="text" name="firstname">
+                        <br/>
+                        Last name:<br>
+                        <input type="text" name="lastname">
+                        <br/>
+                        <select name="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <br/>
+                        <textarea name="message" rows="10" cols="30">
+                    The cat was playing in the garden.
+                    </textarea>
+                        <br/>
+                        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                        <br/>
+
+                    </form>
+                </div>
+                <hr/>
+
+                <div>
+                    <form action="/action_page.php">
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </form>
+                </div>
+                <hr/>
+
+                <div>
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                        <input type="range" id="a" value="50">100
+                        +<input type="number" id="b" value="50">
+                        =
+                        <output name="x" for="a b"></output>
+                    </form>
+                </div>
+                <hr/>
+
+                <form action="">
+                    <fieldset>
+                        <legend>New Attributes</legend>
+                        <div>
+                            <label>
+                                Placeholder
+                            </label>
+                            <input placeholder="some@where.net" name="placeholder-test" type="text">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>
+                                Autofocus
+                            </label>
+                            <input autofocus="" type="text" name="autofocus-test">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>
+                                Maxlength (on textarea e.g.: 10)
+                            </label>
+                            <textarea name="maxlenth-test" maxlength="10"></textarea>
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>
+                                Maxlength (on input e.g.: 10)
+                            </label>
+                            <input name="maxlenth-input-test" maxlength="10">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label for="mintest">
+                                Min (e.g.: number 1)
+                            </label>
+                            <input name="mintest" type="number" min="1">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label for="maxtest">
+                                Max (e.g.: number 10)
+                            </label>
+                            <input name="maxtest" type="number" max="10">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>
+                                Step (e.g.: 5)
+                            </label>
+                            <input name="steptest" type="number" step="5">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>
+                                List (Datalist)
+                            </label>
+                            <input name="datalist-test" type="text" list="planetdata">
+                            <datalist id="planetdata">
+                                <option value="Earth">
+                                </option>
+                                <option value="Venus">
+                                </option>
+                                <option value="Mars">
+                                </option>
+                                <option value="Fomalhaut b">
+                                </option>
+                                <option value="HR 8799">
+                                </option>
+                            </datalist>
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>Accept (only images)</label>
+                            <input type="file" accept="image/*">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>Multiple Files</label>
+                            <input type="file" multiple="">
+                        </div>
+                        <hr/>
+
+
+                        <div>
+                            <label>
+                                Required test
+                            </label>
+                            <input required="" name="required-test" type="text">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>
+                                Pattern test ("7A" should pass)
+                            </label>
+                            <input required="" pattern="[0-9][A-Z]" name="placeholder-test" type="text">
+                        </div>
+                        <hr/>
+
+                        <div>
+                            <label>
+                                Spellcheck
+                            </label>
+                            <div>
+                                <input type="text" spellcheck="true">
+                                <br>
+                                <input type="text" spellcheck="false">
+                                <br>
+                                <textarea spellcheck="true"></textarea>
+                                <br>
+                                <textarea spellcheck="false"></textarea>
+                            </div>
+                        </div>
+                        <hr/>
+                    </fieldset>
+                </form>
+
+                <div>
+                    <form>
+                        <label>
+                            Formmethod
+                        </label>
+                        <input formmethod="get" name="formaction-test" type="submit">
+                    </form>
+                </div>
+                <hr/>
+
+                <div>
+                    <form>
+                        <label>
+                            Formnovalidate
+                        </label>
+                        <input formnovalidate="" name="formaction-test" type="submit">
+                    </form>
+                </div>
+                <hr/>
+
+                <div>
+                    <form>
+                        <label>
+                            Formaction
+                        </label>
+                        <input formaction="https://duckduckgo.com" name="formaction-test" type="submit">
+                    </form>
+                </div>
+                <hr/>
+
+                <div>
+                    <form>
+                        <label>
+                            Form encoding type
+                        </label>
+                        <input formenctype="application/x-www-form-urlencoded" name="formaction-test"
+                               type="submit">
+                    </form>
+                </div>
+                <hr/>
+
+                <div>
+                    <form>
+                        <label>
+                            Formtarget
+                        </label>
+                        <input formtarget="_blank" name="formaction-test" type="submit">
+                    </form>
+                </div>
+                <hr/>
+
+                <form action="">
+                    <fieldset>
+                        <legend>Search</legend>
+                        <label>
+                            Search
+                        </label>
+                        <input type="search" name="search-test" results="5" autosave="some_unique_value">
+                        <input type="submit" value="go" name="search-test">
+                    </fieldset>
+                </form>
+                <hr/>
+
+                <fieldset>
+                    <legend>New Types</legend>
+                    <div>
+                        <label>
+                            Email
+                        </label>
+                        <input name="email-test" type="email">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Tel
+                        </label>
+                        <input name="tel-test" type="tel">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Url
+                        </label>
+                        <input name="url-test" type="url">
+                    </div>
+                    <hr/>
+
+                    <div>
+
+                        <label>
+                            Date
+                        </label>
+                        <input name="datetime-test" type="date">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Datetime
+                        </label>
+                        <input name="datetime-test" type="datetime">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Datetime-local
+                        </label>
+
+                        <input name="datetime-local-test" type="datetime-local">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Month
+                        </label>
+                        <input name="month-test" type="month">
+                    </div>
+                    <hr/>
+
+                    <div>
+
+                        <label>
+                            Week
+                        </label>
+                        <input name="week-test" type="week">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Time
+                        </label>
+                        <input name="time-test" type="time">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Color
+                        </label>
+                        <input name="color-test" type="color">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Number
+                        </label>
+                        <input name="number-test" type="number" min="0" max="100" step="5">
+                    </div>
+                    <hr/>
+
+                    <div>
+                        <label>
+                            Range
+                        </label>
+                        <input name="range-test" type="range" min="0" max="150" step="5">
+                    </div>
+                    <hr/>
+
+
+                    <input type="submit" value="Submit">
+
+                </fieldset>
+
+            </main>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+@see
+1.1
+w3schools.com/html/default.asp
+nafrontendzie.pl/tworzenie-struktury-dokumentu-html5
+http://www.kurshtmlcss.pl/kurs-html/lekcja1-struktura-dokumentu-html.php
+https://yoast.com/meta-descriptions/
+https://www.webnots.com/open-graph-meta-tags-generator/
+
+1.2
+http://weaintplastic.github.io/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_a_new_Project.html
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+1.3
+https://www.w3schools.com/tags/tag_style.asp
+https://www.w3.org/Style/Examples/007/fonts.en.html
+https://websitesetup.org/web-safe-fonts-html-css/
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+
+1.4
+https://www.wufoo.com/html5/example/
+
+1.5 & 1.6
+http://www.kurshtml.edu.pl/css/kaskadowosc_stylow,wstawianie.html
+https://sites.google.com/site/reusecode/css/6
+https://marksheet.io/css-priority.html
+https://www.hongkiat.com/blog/css-priority-level/

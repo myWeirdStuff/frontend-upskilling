@@ -1,0 +1,13 @@
+{
+    "name": "frontend/upskilling",
+    "description": "some fron end stuff to up skills",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "someone",
+            "email": "someone@from.net"
+        }
+    ],
+    "require": {}
+}

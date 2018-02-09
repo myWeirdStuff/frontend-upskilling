@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>frontEnd upskilling - 103 Fonts, headers, texts - font face</title>
+    <script>
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style type="text/css" media="screen">
+        body {
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            font-size: 1.4em;
+            color: red;
+        }
+
+        header {
+            font-family: 'Tangerine', serif;
+            font-size: 48px;
+        }
+
+        #container {
+            widows: 100;
+        }
+
+        #top-navigation {
+        }
+
+        #content {
+            font-size: 1.1rem;
+            color: gray;
+        }
+
+        #right-bar {
+        }
+
+        #footer-navigation {
+        }
+
+        .test-family-arial {
+            font-family: Arial, sans-serif;
+        }
+
+        .test-family-courier {
+            font-family: Courier, monospace;
+        }
+
+        .test-style {
+            color: blueviolet;
+            font-style: italic;
+            font-weight: 800;
+            font-variant: small-caps;
+            font-stretch: ultra-expanded;
+        }
+
+
+        h1, h2, h3 { font-family: 'Georgia', serif; }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header><!-- Specifies a header for a document or section -->
+        <h1>Header Lorem ipsum dolor</h1>
+    </header>
+    <nav><!-- navigations //-->
+        <div id="top-navigation">
+            <h2>header 2</h2>
+            <a href="101.html">link 1</a>
+            &nbsp;|&nbsp;
+            <a href="102.html">link 2</a>
+        </div>
+    </nav>
+    <section>
+        <div id="content">
+            <main><!--	Specifies the main content of a document -->
+                <article><!-- Defines an article //-->
+                    <h3>title article 1</h3>
+                    <p class="test-family-arial">
+                        <mark>Lorem ipsum dolor</mark><!--		Defines marked/highlighted text -->
+                        sit amet, consectetur adipiscing elit. Aenean venenatis aliquam dolor ut auctor.
+                        Vivamus nec eros tempor, ullamcorper justo nec, scelerisque urna. Sed imperdiet risus ac tellus
+                        dictum consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean blandit
+                        libero quis nulla maximus pretium. Vivamus ligula erat, malesuada vel felis fringilla, dapibus
+                        pellentesque augue. Mauris tincidunt eu leo vel tincidunt. Phasellus pellentesque convallis
+                        ante, in
+                        molestie ex faucibus dignissim. Mauris arcu odio, eleifend in aliquet ac, pulvinar ut neque.
+                        Praesent lectus felis, consectetur in enim sed, porttitor condimentum augue. Phasellus sit amet
+                        volutpat urna. Suspendisse eget velit nisl.
+                    </p>
+                </article>
+                <article>
+                    <h3>title article 2</h3>
+                    <p class="test-family-courier">
+                        Morbi ornare lacus sit amet gravida vestibulum. In vel risus lobortis, tincidunt dolor nec,
+                        ullamcorper velit. Nunc non massa a nulla eleifend pulvinar. In dui mauris, ultricies et nisl
+                        vitae,
+                        ultricies rutrum elit. Aliquam id finibus urna. Maecenas porta hendrerit lacus, vitae laoreet
+                        lorem
+                        ultrices a. Nulla facilisi. Fusce feugiat a metus vitae viverra. Fusce mollis venenatis tortor
+                        eu
+                        aliquam. Etiam vitae lectus id dolor laoreet imperdiet. Quisque condimentum leo et magna
+                        sollicitudin molestie. Suspendisse pharetra elit odio, ut posuere erat semper id. In a nulla
+                        ipsum.
+                        Nulla sed ex malesuada, suscipit sem et, mattis nulla. Ut quis augue at quam dapibus dictum
+                        sagittis
+                        ac tortor.</p>
+                    <figure>
+                        <!-- Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. -->
+                        <figcaption>description/caption</figcaption><!-- Defines a caption for a <figure> element -->
+                        <img src="someImage.webp">
+                    </figure>
+                </article>
+            </main>
+        </div>
+    </section>
+    <aside><!-- Defines content aside from the page content //-->
+        <div id="right-bar" class="test-style">
+            <h4>right bar</h4>
+            <h5>header 5</h5>
+            <h6>header 6</h6>
+            <section>
+                <h2>related content for article 1</h2>
+                <details><!-- Defines additional details that the user can view or hide -->
+                    Lorem ipsum dolor
+                    <summary>Copyright owner.</summary><!-- Defines a visible heading for a <details> element -->
+                </details>
+            </section>
+            <section>
+                <h2>related content for article 2</h2>
+            </section>
+        </div>
+    </aside>
+    <footer><!-- Defines a footer for a document or section -->
+        <div id="footer-navigation">
+            <a href="101.html">link A</a>
+            <a href="102.html">link B</a>
+        </div>
+        <time>07:08 09.02.2018</time> <!--	Defines a date/time -->
+    </footer>
+</div>
+</body>
+</html>
