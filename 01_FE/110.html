@@ -7,69 +7,60 @@
         108 Basic selectors (element, class, id)
         109 Selectors (div > p, div + p, div ~ p, a[title])
     </title>
-    <style type="text/css" media="screen"> /* Internal - by using a style element in the head section */
-    /*
-        selector {
-            property: value value1;
+    <style type="text/css" media="screen">
+        /**
+In otherwords:
+
+If the element has inline styling, that automatically1 wins (1,0,0,0 points)
+For each ID value, apply 0,1,0,0 points
+For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points
+For each element reference, apply 0,0,0,1 point
+You can generally read the values as if they were just a number,
+like 1,0,0,0 is "1000",
+and so clearly wins over a specificity of 0,1,0,0 or "100".
+The commas are there to remind us that this isn't really a "base 10" system,
+in that you could technically have a specificity value of like 0,1,13,4 -
+and that "13" doesn't spill over like a base 10 system would.
+
+Element
+Class selectors
+ID Selectors
+Inline styles
+!important
+
+a = Inline style (type 3)
+b = Number of ids (#) on the selector
+c = Number of classes (.) and pseudo-classes[1] on the selector
+d = Number of HTML tags on the selector
+Formula: 1000*a + 100*b + 10*c + d
+
+ul li { ... }                             Rank: 2 (1 + 1)
+.red { ... }                              Rank: 10
+#myID { ... }                             Rank: 100
+#myID .red { ... }                        Rank: 110 (100 + 10)
+#myID .red div > ul { ... }               Rank: 112 (100 + 10 + 1 + 1)
+#myID .red div li:first-child { ... }     Rank: 114 (100 + 10 + 1 + 1 + 2)
+
+         */
+        /*.favorite {*/
+        ul#summer-drinks li {
+            /*color: red;*/
+            /*font-weight: bold;*/
         }
-     */
-    /* type selectors */
-    h1 {
-        color: #e9e9e9;
-    }
-
-    /* universal selectors */
-    * {
-        text-decoration: none;
-    }
-
-    /* descendant selectors */
-    ul li {
-        color: red;
-    }
-
-    /* class selectors */
-    .elementByClass {
-        text-align: right;
-        border: solid 1px blue;
-    }
-    h1.elementByClass2 {
-        font-style: italic;
-    }
-    /* ID selectors */
-    #elementById {
-        color: red;
-        font-weight: bold;
-    }
-
-    #header3 h3 {
-        color: blue;
-    }
-    /* child selectors */
-    body > p {
-        font-size: 1.4em; /* only child for body */
-    }
-    main > ol {
-        color: blue;
-    }
-    /* attribute selectors */
-    p[lipsum="blue"] {
-        color: blue;
-    }
-    p[lang~="bold"] {
-        font-weight: bolder;
-    }
-    p[lang|="bolder"] {
-        /* bolder-someOtherText*/
-        font-weight: bolder;
-    }
-    /* grouping selectors */
-    h1, h2, h3 {
-
-    }
-    .elementByClass, .elementByClass2 {
-
-    }
+        .favorite {
+            /*color: red;*/
+        }
+        .favorite {
+            /*color: black;*/
+        }
+        ul#summer-drinks li.favorite {
+            /*color: red;*/
+            /*font-weight: bold;*/
+        }
+        .favorite {
+            color: blue !important;
+            font-weight: bolder !important;
+        }
     </style>
 </head>
 <body>
@@ -119,6 +110,11 @@
             </main>
         </div>
     </section>
+    <ul id="summer-drinks">
+        <li class="favorite">Whiskey and Ginger Ale</li>
+        <li>Wheat Beer</li>
+        <li>Mint Julip</li>
+    </ul>
 </div>
 </body>
 </html>

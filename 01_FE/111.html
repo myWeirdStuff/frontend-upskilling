@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>frontEnd upskilling -
+        110 CSS box model
+    </title>
+    <script type="text/javascript">
+        var results = "boxModel dimmension\n";
+        var myBoxModel = null;
+    </script>
+    <style type="text/css" media="screen">
+        /**
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+         */
+        #boxModel {
+            background: #00c8c8;
+            width: 400px; /* 400 + 2*50 + 2*15 = 530px */
+            height: 100px; /* 100 + 2*10 + 2*15 = 150px */
+            padding: 10px 50px;
+            border: solid 15px blue;
+            /* margin: 10px; */
+        }
+    </style>
+</head>
+<body>
+<div id="boxModel">
+    Lorem ipsum dolor
+</div>
+<script type="text/javascript">
+(function() {
+    myBoxModel = document.getElementById('boxModel');
+    //offsetHeight includes padding, scrollBar and borders > expect
+    results+= "offset width: " + myBoxModel.offsetWidth + "px > expect 530px \n";
+    //clientHeight includes padding
+    results+= "client width: " + myBoxModel.clientWidth + "px > should be 500 \n";
+    //document.getElementById(item).style.marginTop
+    alert('results ' + results);
+})();
+</script>
+</body>
+</html>

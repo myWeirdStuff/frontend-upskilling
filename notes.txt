@@ -1,3 +1,5 @@
+#common
+https://caniuse.com/#search=input
 
 @see
 1.1
@@ -25,3 +27,28 @@ http://www.kurshtml.edu.pl/css/kaskadowosc_stylow,wstawianie.html
 https://sites.google.com/site/reusecode/css/6
 https://marksheet.io/css-priority.html
 https://www.hongkiat.com/blog/css-priority-level/
+
+1.7 & 1.8 & 1.9
+https://www.w3schools.com/cSS/css_syntax.asp
+https://www.tutorialspoint.com/css/css_syntax.htm
+https://www.quackit.com/css/tutorial/css_syntax.cfm
+
+https://www.quackit.com/css/selectors/
+
+1.10
+https://stackoverflow.com/questions/4072365/understanding-css-selector-priority-specificity
+https://www.w3.org/TR/CSS2/cascade.html#specificity
+https://specificity.keegan.st
+https://www.w3.org/TR/selectors-3/
+https://css-tricks.com/specifics-on-css-specificity/
+http://codeblog.alexeguia.net/priority-of-css-selectors/
+https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/
+
+1.11
+https://www.w3schools.com/css/css_boxmodel.asp
+
+1.12
+https://www.w3schools.com/colors/colors_converter.asp
+https://www.w3schools.com/cssref/css_colors_legal.asp
+https://www.webpagefx.com/web-design/hex-to-rgb/
+https://www.rapidtables.com/convert/color/rgb-to-hsl.html
