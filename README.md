@@ -12,8 +12,8 @@
    10. Selector priority & How to count priority (???)
    11. CSS box model
    12. Declaring colors (#, rgb, rgba, hsl, hsla, predefined)
-   13. Właściwość display (tylko block, inline, inline-block)
-   14. Właściwość position
+   13. Display property (block only, inline, inline block)
+   14. The position property
 2. HTML & CSS - level medium
   * Pseudo-klasy :first-child, :nth-child itd.
   * Pseudo-elementy ::before, ::after itd.

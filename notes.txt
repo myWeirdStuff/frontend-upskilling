@@ -52,3 +52,7 @@ https://www.w3schools.com/colors/colors_converter.asp
 https://www.w3schools.com/cssref/css_colors_legal.asp
 https://www.webpagefx.com/web-design/hex-to-rgb/
 https://www.rapidtables.com/convert/color/rgb-to-hsl.html
+
+1.13 & 1.14
+https://css-tricks.com/almanac/properties/d/display/
+https://www.w3schools.com/css/css_positioning.asp

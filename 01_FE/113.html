@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>frontEnd upskilling -
+        113 Display property (block only, inline, inline block)
+        114 The position property
+    </title>
+    <script type="text/javascript">
+    </script>
+    <style type="text/css" media="screen">
+        div {
+            margin: 5px;
+            padding: 5px;
+        }
+        #displayInline {
+            /* Default of all elements, unless UA stylesheet overrides */
+            display: inline;
+            border: solid 1px blue;
+        }
+        #displayInlineBlock {
+            /* Characteristics of block, but sits on a line */
+            display: inline-block;
+            border: solid 1px red;
+        }
+        #displayBlock
+        {
+            /* UA stylesheet makes things like <div> and <section> block */
+            display: block;
+            border: solid 1px green;
+        }
+        #displayRunIn
+        {
+            /* Not particularly well supported or common */
+            display: run-in;
+            border: solid 1px black;
+        }
+        #displayHide
+        {
+            /* Hide */
+            display: none;
+            border: solid 1px orange;
+        }
+        #positionStatic {
+            position: static;
+            border: 3px dashed darkgreen;
+        }
+        #positionRelative {
+            position: relative;
+            border: 3px dashed darkcyan;
+        }
+        #positionFixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px dashed darkgoldenrod;
+        }
+        #positionAbsolute {
+            position: absolute;
+            right: 0;
+            top: 35px;
+            border: 3px dashed darkolivegreen;
+        }
+        #positionSticky {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            background-color: green;
+            border: 3px dashed darkmagenta;
+        }
+    </style>
+</head>
+<body>
+<div id="positionSticky">Lorem ipsum dolor POSITION sticky</div>
+<div id="displayInline">Lorem ipsum dolor INLINE</div>
+<div id="displayInlineBlock">Lorem ipsum dolor INLINE BLOCK</div>
+<div id="displayBlock">Lorem ipsum dolor BLOCS</div>
+<div id="displayRunIn">Lorem ipsum dolor RUN IN</div>
+<div id="displayHide">Lorem ipsum dolor NONE</div>
+<div id="positionStatic">Lorem ipsum dolor POSITION static</div>
+<div id="positionRelative">Lorem ipsum dolor POSITION relative</div>
+<div id="positionFixed">Lorem ipsum dolor POSITION fixed</div>
+<div id="positionAbsolute">Lorem ipsum dolor POSITION absolute</div>
+<div style="height: 1500px">empty</div>
+</body>
+</html>
