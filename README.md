@@ -15,14 +15,14 @@
    13. Display property (block only, inline, inline block)
    14. The position property
 2. HTML & CSS - level medium
-  * Pseudo-klasy :first-child, :nth-child itd.
-  * Pseudo-elementy ::before, ::after itd.
-  * Pozycjonowanie (float, flexbox, grid css)
+   1. Pseudo-classes: first-child,: nth-child, etc.
+   2. Pseudo-elementy ::before, ::after itd.
+   3. Pozycjonowanie (float, flexbox, grid css)
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://css-tricks.com/snippets/css/complete-guide-grid/ 
-  * RWD (media queries, responsywne jednostki, calc)
-  * Konwencje - BEM/suit
+   4. RWD (media queries, responsywne jednostki, calc)
+   5. Konwencje - BEM/suit
 http://getbem.com/naming/
 https://suitcss.github.io/
-  * Animacje
-  * Transformacje
+   6. Animacje
+   7. Transformacje
