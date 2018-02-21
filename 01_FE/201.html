@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>frontEnd upskilling -
-        201 Pseudo-classes: first-child,: nth-child, etc.
+        201 Pseudo-classes: first-child,: nth-child etc.
+        202 CSS Pseudo Elements ::before, ::after etc.
     </title>
     <script type="text/javascript">
     </script>
@@ -183,27 +184,55 @@
             font-weight: bold;
         }
 
-        /**
-        :read-write	input:read-write	Selects <input> elements with no "readonly" attribute
-        :root	root	Selects the document's root element
-        :target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
-        :valid	input:valid	Selects all <input> elements with a valid value
-        :visited	a:visited	Selects all visited links
-         */
-        /**
-        All CSS Pseudo Elements
-        Selector	Example	Example description
-        ::after	p::after	Insert content after every <p> element
-        ::before	p::before	Insert content before every <p> element
-        ::first-letter	p::first-letter	Selects the first letter of every <p> element
-        ::first-line	p::first-line	Selects the first line of every <p> element
-        ::selection	p::selection	Selects the portion of an element that is selected by a user
-         */
+        :root {
+            border: solid 10px orange;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        :target {
+            padding: 20px;
+        }
+
+        input:valid {
+            font-size: 2em;
+        }
+
+        #someLinks::after {
+            content: " - Remember this is UPSKILLING";
+        }
+
+        #someLinks::before {
+            content: "UPSKILLING >> \A";
+            white-space: pre;
+        }
+
+        #someDiv::first-letter {
+            text-transform: lowercase;
+        }
+        #displayInline::first-line {
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+
+        #displayInlineOnlyParagraph::first-letter {
+            font-weight: bolder;
+        }
+
+        ::selection {
+            color: red;
+            background: yellow;
+        }
     </style>
 </head>
 <body>
     <div id="someDiv">Lorem <b>ipsum</b> dolor <a>a href</a> and <strong>strong</strong></div>
-    <div id="displayInline">Lorem <b>ipsum</b> dolor INLINE</div>
+    <div id="displayInline">Lorem <b>ipsum</b> dolor INLINE<br /> and second line</div>
+    <div id="someLinks">
+        <a href="#p1">jump to p#1</a>
+        <br />
+        <a href="#p2">jump to p#2</a>
+    </div>
     <div id="someForm">
         <p>some paragraph</p>
         <p lang="en">some second paragraph</p>
@@ -232,8 +261,8 @@
     <p>some non last paragraph </p>
     <p>some last paragraph <span>and this is span</span></p>
     <div id="displayInlineSecond">
-        <p>some <span>paragraph 1</span></p>
-        <p>some paragraph 2</p>
+        <p id="p1">some <span>paragraph 1</span></p>
+        <p id="p2">some paragraph 2</p>
         <p>some paragraph 3</p>
         <p>some paragraph 4</p>
         <p>some paragraph 5</p>

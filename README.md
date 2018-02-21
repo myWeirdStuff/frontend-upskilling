@@ -16,8 +16,8 @@
    14. The position property
 2. HTML & CSS - level medium
    1. Pseudo-classes: first-child,: nth-child, etc.
-   2. Pseudo-elementy ::before, ::after itd.
-   3. Pozycjonowanie (float, flexbox, grid css)
+   2. CSS Pseudo Elements ::before, ::after itd.
+   3. Positioning (float, flexbox, grid css)
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://css-tricks.com/snippets/css/complete-guide-grid/ 
    4. RWD (media queries, responsywne jednostki, calc)
